@@ -15,25 +15,25 @@ To install and build this API into an executable able of performing benchmarks, 
 This has created an executable file called "benchmark" in folder YOUR_PROJECTS_FOLDER/benchmark. To run a benchmark
 you need to run above file:
 
-./benchmark STRUCTURE CLASS DATATYPE 
+*./benchmark STRUCTURE CLASS DATATYPE*
 
 Where STRUCTURE can be:
 
-- list
-- map
-- set
+- *list*
+- *map*
+- *set*
 
 And CLASS can be:
 
-- ArrayList, std::vector, LinkedList, std::forward_list, DoublyLinkedList, std::list (if STRUCTURE = list)
-- HashMap, std::unordered_map, TreeMap, std::map, LinkedHashMap (if STRUCTURE = map)
-- HashSet, std::unordered_set, TreeSet, std::set, LinkedHashSet (if STRUCTURE = set)
+- ArrayList, std::vector, LinkedList, std::forward_list, DoublyLinkedList, std::list (if STRUCTURE = *list*)
+- HashMap, std::unordered_map, TreeMap, std::map, LinkedHashMap (if STRUCTURE = *map*)
+- HashSet, std::unordered_set, TreeSet, std::set, LinkedHashSet (if STRUCTURE = *set*)
 
 And DATATYPE can be:
 
-- long
-- char*
+- *long*
+- *char**
 
 Example:
 
-./benchmark list ArrayList long 
+*./benchmark list ArrayList long*

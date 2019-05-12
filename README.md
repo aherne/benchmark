@@ -1,7 +1,7 @@
 # benchmark
 Benchmark Library comparing C++ Abstract Data Types and Data Structures API to STL
 
-To install and build this API into an executable able of performing benchmarks, you need to perform following console steps:
+To install and build this API into an executable able of performing benchmarks, you need to perform following commands:
 
 1. cd YOUR_PROJECTS_FOLDER
 2. git clone https://github.com/aherne/c-data-structures-api.git
@@ -13,7 +13,7 @@ To install and build this API into an executable able of performing benchmarks, 
 8. make LIB="YOUR_PROJECTS_FOLDER/c-data-structures-api"
 
 This has created an executable file called "benchmark" in folder YOUR_PROJECTS_FOLDER/benchmark. To run a benchmark
-you need to run above file:
+you need to run above file with following arguments:
 
 *./benchmark STRUCTURE CLASS DATATYPE*
 
@@ -37,3 +37,16 @@ And DATATYPE can be:
 Example:
 
 *./benchmark list ArrayList long*
+
+Response will be a TAB separated list of durations depending on STRUCTURE:
+
+- TAB+INSERTION+TAB+ITERATION+TAB+RANDOM_ACCES+TAB+DELETION  (if STRUCTURE = *list*)
+- TAB+INSERTION+TAB+ITERATION+TAB+RANDOM_ACCES+TAB+DELETION  (if STRUCTURE = *map*)
+- TAB+INSERTION+TAB+ITERATION+TAB+DELETION  (if STRUCTURE = *set*)
+
+Where:
+
+- *INSERTION*: cost of inserting a million entries in milliseconds
+- *ITERATION*: cost of iterating a million entries in milliseconds
+- *RANDOM_ACCESS*: cost of retrieving a million consecutive entries by position/key in milliseconds
+- *DELETION*: cost of deleting a million consecutive entries in milliseconds

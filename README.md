@@ -1,4 +1,4 @@
-# benchmark
+# Benchmark Library: C++ ADT & DS API vs. STL
 Benchmark Library comparing C++ Abstract Data Types and Data Structures API to STL
 
 To install and build this API into an executable able of performing benchmarks, you need to perform following commands:
